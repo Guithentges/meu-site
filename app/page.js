@@ -6,7 +6,7 @@ export default function Home() {
     <main className="main">
       <div className="card">
         <Image
-          src="/gui.png" // Coloque sua foto na pasta "public"
+          src="/Gui.png"
           alt="Minha foto"
           width={150}
           height={150}
