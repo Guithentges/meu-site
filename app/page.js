@@ -58,6 +58,11 @@ export default function Home() {
         </div>
         <div className="projects-grid">
           <div className="proj">
+            <a target="_blank" href="/jogo_forca"><Image className="project-img" src="/aura.png" width={500} height={500} alt="Site de E-Commerce Aura"></Image><div className="proj-text">Aura é um Website de E-Commerce completo, com funcionalidade de Cadastro e Login, catálogo de roupas com categorias, carrinho de compras e pedidos anteriores por cliente. Feito em django, totalmente criado e desenvolvido por mim e pelo meu grupo para a disciplina de Análise e Projeto de Software.</div>
+              <p>Jogo da Forca</p>
+            </a>
+          </div>
+          <div className="proj">
             <a target="_blank" href="https://github.com/Guithentges/Aura"><Image className="project-img" src="/aura.png" width={500} height={500} alt="Site de E-Commerce Aura"></Image><div className="proj-text">Aura é um Website de E-Commerce completo, com funcionalidade de Cadastro e Login, catálogo de roupas com categorias, carrinho de compras e pedidos anteriores por cliente. Feito em django, totalmente criado e desenvolvido por mim e pelo meu grupo para a disciplina de Análise e Projeto de Software.</div>
               <p>E-commerce Aura</p>
             </a>
