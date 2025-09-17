@@ -391,26 +391,46 @@ header{
 }
 
 
-
-.jogo-forca-container {
+/*estilos do jogo da forca*/
+.forca-main {
   width: 100%;
   min-height: 100vh;
+  background-color: var(--primary-color);
+  padding: 2rem;
+}
+.forca-header {
+  text-align: center;
+  & h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--terciary-color);
+  }
+}
+.forca-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--primary-color);
-  padding: 2rem;
+  margin-top: 5rem;
 }
-.letra-input {
-    background-color: #f0f0f0;
-    width: 3rem;
-    color: #222;
+.palavra-chave{
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 2rem;
+    color: var(--scondary-color);
   }
 .mensagem {
-    margin-top: 1rem;
-    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid var(--scondary-color);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
     color: var(--terciary-color);
+    transition: all 500ms ease;
+  }
+  .mensagem:hover {
+    transform: scale(1.3);
   }
 .teclado {
   display: grid;
@@ -424,13 +444,26 @@ header{
   padding: 8px;
   font-size: 16px;
   cursor: pointer;
+  border: 1px solid var(--terciary-color);
+  border-radius: 5px;
+  transition: all 300ms ease;
+}
+.tecla:hover {
+  background: var(--terciary-color);
+  color: var(--primary-color);
+  transform: scale(1.1);
 }
 
 .tecla.desativada {
   background: #ccc;
+  border: none;
   color: #666;
   cursor: not-allowed;
   opacity: 0.5;
+}
+.erros span{
+  color: var(--terciary-color);
+  font-weight: bold;
 }
 .forca{
   position: relative;
@@ -445,14 +478,14 @@ header{
 .poste{
   width: 1px;
   height: 15rem;
-  border: 1px solid blue;
+  border: 1px solid var(--scondary-color);
   margin-left: 15rem;
 }
 .barra-horizontal{
   position: absolute;
   width: 10rem;
   height: 1px;
-  border: 1px solid blue;
+  border: 1px solid var(--scondary-color);
   top: 0px;
   left: 17.5rem;
 }
@@ -460,7 +493,7 @@ header{
   position: absolute;
   width: 1px;
   height: 3rem;
-  border: 1px dotted blue;
+  border: 1px dotted var(--scondary-color);
   top: 0px;
   left: 17.5rem;
 }
@@ -468,7 +501,7 @@ header{
   position: absolute;
   width: 3rem;
   height: 3rem;
-  border: 1px solid blue;
+  border: 1px solid var(--terciary-color);
   border-radius: 50%;
   top: 3rem;
   left: 16rem;
@@ -477,7 +510,7 @@ header{
   position: absolute;
   width: 1px;
   height: 5rem;
-  border: 1px solid blue;
+  border: 1px solid var(--terciary-color);
   top: 6rem;
   left: 17.5rem;
 }
@@ -485,7 +518,7 @@ header{
   position: absolute;
   width: 1px;
   height: 4rem;
-  border: 1px solid blue;
+  border: 1px solid var(--terciary-color);
   top: 7rem;
   left: 17.5rem;
   transform: rotate(-45deg);
@@ -495,7 +528,7 @@ header{
   position: absolute;
   width: 1px;
   height: 4rem;
-  border: 1px solid blue;
+  border: 1px solid var(--terciary-color);
   top: 7rem;
   left: 17.5rem;
   transform: rotate(45deg);
@@ -505,7 +538,7 @@ header{
   position: absolute;
   width: 1px;
   height: 4rem;
-  border: 1px solid blue;
+  border: 1px solid var(--terciary-color);
   top: 11rem;
   left: 17.5rem;
   transform: rotate(-30deg);
@@ -515,9 +548,34 @@ header{
   position: absolute;
   width: 1px;
   height: 4rem;
-  border: 1px solid blue;
+  border: 1px solid var(--terciary-color);
   top: 11rem;
   left: 17.5rem;
   transform: rotate(30deg);
   transform-origin: top;
+}
+.reset {
+  margin-top: 1rem;
+  border: 1px solid var(--terciary-color);
+  padding: 0.5rem 1.5rem;
+  color: var(--scondary-color);
+  border-radius: 5px;
+  transition: all 500ms ease;
+}
+.reset:hover {
+  color: var(--terciary-color);
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.voltar{
+  border: 1px solid var(--terciary-color);
+  border-radius: 5px;
+  width: fit-content;
+  padding: 1rem 1.5rem;
+  transition: all 500ms ease;
+}
+.voltar:hover {
+  color: var(--terciary-color);
+  cursor: pointer;
+  transform: scale(1.5);
 }
