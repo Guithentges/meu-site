@@ -58,7 +58,7 @@ export default function Home() {
         </div>
         <div className="projects-grid">
           <div className="proj">
-            <a target="_blank" href="/jogo_forca"><Image className="project-img" src="/aura.png" width={500} height={500} alt="Site de E-Commerce Aura"></Image><div className="proj-text">Aura é um Website de E-Commerce completo, com funcionalidade de Cadastro e Login, catálogo de roupas com categorias, carrinho de compras e pedidos anteriores por cliente. Feito em django, totalmente criado e desenvolvido por mim e pelo meu grupo para a disciplina de Análise e Projeto de Software.</div>
+            <a target="_blank" href="/jogo_forca"><Image className="project-img" src="/forca.png" width={500} height={500} alt="Jogo da Forca"></Image><div className="proj-text">Jogo da Forca desenvolvido por mim como atividade para a cadeira de Desenvolvimento Web Mobile da Universidade Católica de Pernambuco, visando aprimorar meus conhecimentos em Desenvolvimento Frontend</div>
               <p>Jogo da Forca</p>
             </a>
           </div>
