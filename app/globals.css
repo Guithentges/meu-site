@@ -397,10 +397,11 @@ header{
 
 /*estilos do jogo da forca*/
 .forca-main {
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
   background-color: var(--primary-color);
   padding: 2rem;
+  overflow: hidden;
 }
 .forca-header {
   text-align: center;
@@ -602,4 +603,9 @@ header{
   border-left: 3px solid var(--terciary-color);
   border-bottom: 3px solid var(--terciary-color);
   transform: rotate(45deg);
+}
+.tentativas {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: var(--scondary-color);
 }

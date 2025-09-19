@@ -120,6 +120,7 @@ export default function JogoForca() {
             { erros.length > 4 &&(<div className="perna-esquerda"></div>)}
             { erros.length > 5 &&(<div className="perna-direita"></div>)}
         </div>
+        { !resultado &&(<div className="tentativas">Tentativas restantes: { 6 - erros.length}</div>)}
         <div className="palavra-chave">{mostrarPalavra()}</div>
         {erros.length != 0 && (<div className="erros">Letras erradas: <span>{erros.join(", ")}</span></div>)}
 
