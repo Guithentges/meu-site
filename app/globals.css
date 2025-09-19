@@ -368,6 +368,10 @@ header{
     .proj:hover .proj-text{
       display: none;
     }
+    .icone-seta{
+      width: 5px;
+      height: 5px;
+    }
   }
   
   
@@ -465,95 +469,104 @@ header{
   color: var(--terciary-color);
   font-weight: bold;
 }
-.forca{
+.forca {
   position: relative;
-  width: 35%;
-  height: fit-content;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-block: 2rem;
-  margin-left: 6rem;
+  width: 300px;        
+  height: 300px;
+  margin: 0 auto;
+  background: transparent;
 }
-.poste{
-  width: 1px;
-  height: 15rem;
-  border: 1px solid var(--scondary-color);
-  margin-left: 15rem;
-}
-.barra-horizontal{
+
+.poste {
   position: absolute;
-  width: 10rem;
+  bottom: 100px;
+  left: 40px;
+  width: 1px;
+  height: 200px;
+  background: var(--scondary-color);
+}
+
+.barra-horizontal {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  width: 120px;
   height: 1px;
-  border: 1px solid var(--scondary-color);
-  top: 0px;
-  left: 17.5rem;
+  background: var(--scondary-color);
 }
-.corda{
+
+.corda {
   position: absolute;
-  width: 1px;
-  height: 3rem;
-  border: 1px dotted var(--scondary-color);
-  top: 0px;
-  left: 17.5rem;
+  top: 0;
+  left: 160px;
+  width: 2px;
+  height: 40px;
+  border-right: 2px dotted var(--scondary-color);
 }
-.cabeca{
+
+.cabeca {
   position: absolute;
-  width: 3rem;
-  height: 3rem;
-  border: 1px solid var(--terciary-color);
+  top: 40px;
+  left: 140px;
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--terciary-color);
   border-radius: 50%;
-  top: 3rem;
-  left: 16rem;
 }
-.corpo{
+
+.corpo {
   position: absolute;
-  width: 1px;
-  height: 5rem;
-  border: 1px solid var(--terciary-color);
-  top: 6rem;
-  left: 17.5rem;
+  top: 80px;
+  left: 160px;
+  width: 2px;
+  height: 70px;
+  background: var(--terciary-color);
 }
-.braco-esquerdo{
+
+.braco-esquerdo {
   position: absolute;
-  width: 1px;
-  height: 4rem;
-  border: 1px solid var(--terciary-color);
-  top: 7rem;
-  left: 17.5rem;
+  top: 90px;
+  left: 160px;
+  width: 2px;
+  height: 50px;
+  background: var(--terciary-color);
   transform: rotate(-45deg);
   transform-origin: top;
 }
-.braco-direito{
+
+.braco-direito {
   position: absolute;
-  width: 1px;
-  height: 4rem;
-  border: 1px solid var(--terciary-color);
-  top: 7rem;
-  left: 17.5rem;
+  top: 90px;
+  left: 160px;
+  width: 2px;
+  height: 50px;
+  background: var(--terciary-color);
   transform: rotate(45deg);
   transform-origin: top;
 }
-.perna-esquerda{
+
+.perna-esquerda {
   position: absolute;
-  width: 1px;
-  height: 4rem;
-  border: 1px solid var(--terciary-color);
-  top: 11rem;
-  left: 17.5rem;
+  top: 150px;
+  left: 160px;
+  width: 2px;
+  height: 60px;
+  background: var(--terciary-color);
   transform: rotate(-30deg);
   transform-origin: top;
 }
-.perna-direita{
+
+.perna-direita {
   position: absolute;
-  width: 1px;
-  height: 4rem;
-  border: 1px solid var(--terciary-color);
-  top: 11rem;
-  left: 17.5rem;
+  top: 150px;
+  left: 160px;
+  width: 2px;
+  height: 60px;
+  background: var(--terciary-color);
   transform: rotate(30deg);
   transform-origin: top;
 }
+
 .reset {
   margin-top: 1rem;
   border: 1px solid var(--terciary-color);
@@ -568,14 +581,25 @@ header{
   transform: scale(1.2);
 }
 .voltar{
+  position: absolute;
+  top: 40px;
+  left: 20px;
   border: 1px solid var(--terciary-color);
   border-radius: 5px;
   width: fit-content;
-  padding: 1rem 1.5rem;
+  padding: 1rem 2rem;
   transition: all 500ms ease;
+  font-size: 1rem;
 }
 .voltar:hover {
   color: var(--terciary-color);
   cursor: pointer;
-  transform: scale(1.5);
+  transform: scale(1.2);
+}
+.icone-seta {
+  width: 12px;
+  height: 12px;
+  border-left: 3px solid var(--terciary-color);
+  border-bottom: 3px solid var(--terciary-color);
+  transform: rotate(45deg);
 }

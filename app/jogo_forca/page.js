@@ -1,7 +1,39 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 
-const palavras = ["REACT", "NEXT", "PROGRAMACAO", "WEB", "MOBILE"];
+const palavras = [
+  "ALGORITMO",
+  "INTELIGENCIA",
+  "DADOS",
+  "PROGRAMACAO",
+  "SISTEMA",
+  "COMPUTADOR",
+  "INTERNET",
+  "NAVEGADOR",
+  "SOFTWARE",
+  "HARDWARE",
+  "ROBOTICA",
+  "SEGURANCA",
+  "REDES",
+  "DESENVOLVIMENTO",
+  "CONECTIVIDADE",
+  "TECNOLOGIA",
+  "COMPILADOR",
+  "SERVIDOR",
+  "MONITOR",
+  "FUNCIONAMENTO",
+  "PYTHON",
+  "JAVASCRIPT",
+  "PROTOCOLO",
+  "BIBLIOTECA",
+  "CODIGO",
+  "AUTOMACAO",
+  "MEMORIA",
+  "APRENDIZADO",
+  "NUVEM",
+  "CRIPTOGRAFIA",
+];
+
 const alfabeto = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
 function numeroAleatorio(min, max) {
@@ -71,24 +103,22 @@ export default function JogoForca() {
 
   return (
     <div className="forca-main">
-      <a className="voltar" href="./">Voltar para o Portfólio</a>
+      <a className="voltar" href="./"><div className="icone-seta"></div></a>
       <div className="forca-header">
         <h1>Jogo da Forca</h1>
-        <p>Bem-vindo ao Jogo da Forca! Tente adivinhar a palavra antes que a forca esteja completa.</p>
+        <p>Bem-vindo ao Jogo da Forca!<br></br> Use o Teclado ou Mouse para testar as letras e tentar adivinhar a palavra antes que a forca esteja completa.</p>
       </div>
       <div className="forca-container">
         <div className="forca">
           <div className="poste"></div>
           <div className="barra-horizontal"></div>
           <div className="corda"></div>
-          <div className="boneco">
             { erros.length > 0 &&(<div className="cabeca"></div>)}
             { erros.length > 1 &&(<div className="corpo"></div>)}
             { erros.length > 2 &&(<div className="braco-esquerdo"></div>)}
             { erros.length > 3 &&(<div className="braco-direito"></div>)}
             { erros.length > 4 &&(<div className="perna-esquerda"></div>)}
             { erros.length > 5 &&(<div className="perna-direita"></div>)}
-          </div>
         </div>
         <div className="palavra-chave">{mostrarPalavra()}</div>
         {erros.length != 0 && (<div className="erros">Letras erradas: <span>{erros.join(", ")}</span></div>)}
