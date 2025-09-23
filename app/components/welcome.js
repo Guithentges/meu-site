@@ -13,6 +13,7 @@ export default function Welcome() {
                       <a target="_blank" id="profile-link" href="https://www.instagram.com/guihentges/"><i className='bx bxl-instagram'></i></a>
                       <a target="_blank" href="https://wa.me/5581992587494"><i className='bx bxl-whatsapp'></i></a>
                     </div>
+                    <a href="/Curriculo_GTH.pdf" download className="download-btn">Baixar Currículo</a>
                   </div>
                   <div className="img">
                     <Image id="eu"  className="w-150 h-150 md:w-48 md:h-48 rounded-full mx-auto" alt="Foto minha" width={250} height={250} src="/Gui.png" rel="Me"></Image>
