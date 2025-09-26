@@ -378,6 +378,9 @@ header{
       height: 80%;
       object-fit: cover;
     }
+    .proj a{
+      height: 100%;
+    }
     .proj p{
       margin-top: 0.5rem;
       font-size: 1rem;
