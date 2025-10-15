@@ -10,7 +10,7 @@ export default function Habilidades() {
                     <a target="_blank" href="https://guithentges.github.io/DocPython/"><Image src="/python.svg"width={20} height={20} alt=""></Image><span className="skill-name">Python</span></a>
                     <a target="_blank" href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"><Image src="/javascript.svg" width={20} height={20} alt=""></Image><span className="skill-name">Javascript</span></a>
                     <a target="_blank" href="https://nodejs.org/pt"><Image src="/node.png"width={30} height={30} alt=""></Image><span className="skill-name">Node.js</span></a>
-                    <a target="_blank" href="https://vuejs.org/"><Image src="/vue.png"width={20} height={20} alt=""></Image><span className="skill-name">Vue.js</span></a>
+                    <a target="_blank" href="https://pt-br.legacy.reactjs.org/"><Image src="/react.png"width={20} height={20} alt=""></Image><span className="skill-name">React</span></a>
                   </div>
                   <div className="skills sk2">
                     <a target="_blank" href="https://github.com/Guithentges"><Image src="/github.svg" width={20} height={20} alt=""></Image><span className="skill-name">Github</span></a>
